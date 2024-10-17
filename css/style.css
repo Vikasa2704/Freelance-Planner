@@ -40,8 +40,8 @@ font-style: normal;
   transition: background-color var(--transition-speed);
 }
 
-button:hover {
-  background-color: #fff; /* Виберіть інший колір для ховера */
+/* button:hover {
+   background-color: #fff; /* Виберіть інший колір для ховера */
 
 
 *,
@@ -111,12 +111,6 @@ align-items: center;
 gap: 35px;
 align-self: stretch;
 }
-/* .hero {
-	background-color: #2a2a2a;
-	background-image: url(шлях до зображення);
-background-repeat: no-repeat;
-} */
-
 
 .header-nav {
 display: flex;
@@ -142,8 +136,7 @@ height: 119px;
   align-items: center;
   gap: 31px;
 }
-/* .header-nav-item {
-} */
+
 .header-nav-link {
 display: flex;
 padding: 10px;
@@ -180,7 +173,7 @@ letter-spacing: 0.2px;
 }
 
 /* HERO */
-.hero {
+.hero-content {
 display: flex;
 padding: 40px 0px;
 flex-direction: column;
@@ -206,7 +199,6 @@ max-width: 198px;
 }
 .hero-text{
 display: flex;
-/* padding: 10px; */
 align-items: center;
 gap: 10px;
 text-align: center;
@@ -217,15 +209,158 @@ letter-spacing: 0.2px;
 width: 591px;
 height: 60px;
 }
-/* .hero {
-  background-color: #2a2a2a;
-  background-image: url(hero.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 500px;
+.hero-btns {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 35px;
+align-self: stretch;
+}
+.hero-btn  {
+display: flex;
+padding: 10px 30px;
+align-items: center;
+color: var(--light-text);
+color: var(--light-background, #FFF);
+font-size: 17px;
+font-weight: 500;
+line-height: 1.47; 
+letter-spacing: 0.2px;
+cursor: pointer;
+background-color: var(--dark-background);
+border: 1px solid var(--light-text, #FFF);
+box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.first {
+background: var(--primary, #4452FE);
+border: none;
+}
+.first:hover {
+background: #4578FB;
+}
+
+.heroy {
+  position: relative;
+  width: 1552px; /* Задайте ширину контейнера */
+  height: 841px; /* Задайте висоту контейнера */
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 35px;
-  padding: 100px 0;
-} */
+}
+
+.heroy-img {
+  position: absolute;
+  width: 466px; /* Ширина кожного зображення */
+  height: 451px; /* Висота кожного зображення */
+  object-fit: cover;
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #0E0E0E 66.15%);
+}
+
+/* Зображення вгорі */
+.img-top {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* Зображення ліворуч */
+.img-left {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Зображення праворуч */
+.img-right {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) rotate(45deg);
+}
+.features {
+display: flex;
+padding: 62px 50px;
+flex-direction: column;
+align-items: flex-start;
+gap: 80px;
+align-self: stretch;
+width: 1479px;
+height: 1027px;
+/* position: relative; */
+}
+
+.features-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 27px;
+margin: 0 auto;
+width: 611px;
+height: 149px;
+}
+.features-title {
+font-size: 52px;
+font-weight: 400;
+line-height: 1.9; /* 119.231% */
+letter-spacing: 0.2px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 27px;
+}
+.features-description {
+text-align: center;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.5; /* 150% */
+letter-spacing: 0.2px;
+}
+.features-images {
+display: flex;
+width: 1088px;
+box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+}
+.features-img-top {
+width: 696px;
+height: 659px;
+flex-shrink: 0;
+
+
+} 
+.features-img-bottom {
+width: 400px;
+height: 276px;
+flex-shrink: 0;
+transform: translate(-95%, 150%);
+z-index: 1; /* Встановлення шару для накладання */
+  }
+
+
+.features-item{
+display: flex;
+justify-content: center;
+padding: 20px;
+flex-direction: column;
+align-items: flex-start;
+gap: 25px;
+width: 269px;
+height: 758px;
+
+}
+.features-icon {
+fill:#02E4C0
+}
+.features-subtitle {
+font-size: 20px;
+font-weight: 500;
+line-height: 1.5; 
+letter-spacing: 0.1px;
+}
+.features-text {
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.2px;
+}
