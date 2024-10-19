@@ -644,10 +644,15 @@ display: flex;
 flex-wrap: wrap;
 align-items: center;
 gap: 13px;
-width: 99px;
+
 }
 .testimonials-img {
 border-radius: 50%;
+}
+.testimonials-card2{
+display: flex;
+gap: 10px;  
+flex-direction: column;
 }
 .testimonials-name {
 display: flex;
@@ -670,9 +675,10 @@ font-weight: 500;
 line-height: 1.5; /* 150% */
 letter-spacing: 0.1px;
 }
-.testimonials-card2 {
+.testimonials-card3 {
 display: flex;
 align-items: center;
+
 }
 .testimonials-text2 {
 color: var(--light-text, #FFF);
